@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+<body>
+<div class="block">
+    <div class="anim anim_stand"></div>
+    <div class="guessing">
+        <h1>Угадай число</h1>
+        <p>Мы выбрали случайное число от 1 до 100. Посмотрите,
+            сможете ли вы угадать его за 10 ходов или меньше.
+            Мы скажем вам, была ли ваша догадка слишком
+            высокой или слишком низкой.</p>
+        <div class="enter">
+            <p>Введите предположительное число:</p>
+            <input class="guessin" type="text">
+        </div>
+        <div>
+            <button class="checkButton" onclick="сheck()">Проверка числа</button>
+            <span class="check"></span>
+        </div>
+        <div class="previous">
+            <p>Предыдущие догадки:</p>
+            <span class="previousNum"></span>
+        </div>
+        <div class="hiden button">
+            <h2>Поздравляю, вы выиграли!</h2>
+            <p>Хотите попробывать ещё раз?</p>
+            <button onclick="restart()" class="star">Начать!</button>
+        </div>
+        <div class="hiden button2">
+            <h2>Вы проиграли!</h2>
+            <p>Хотите попробывать ещё раз?</p>
+            <button onclick="restart()" class="star">Начать!</button>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

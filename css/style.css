@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.block {
+    display: flex;
+    margin: auto;
+}
+
+.block h1 {
+    margin: 15px 0;
+}
+.enter {
+    display: flex;
+    margin: 15px 0;
+}
+.enter p {
+    margin-right: 15px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.button p {
+    margin: 15px 0;
+}
+.hiden{
+    display: none;
+}
+.star {
+    padding: 5px;
+    font-size: 20px;
+}
+.previous {
+    margin: 15px 0;
+}
+.checkButton {
+
+}
+.anim {
+    background-color: bisque;
+    background-image: url("../img/sakura_max.png");
+    height: 400px;
+    width: 600px;
+}
+.anim_stand {
+    animation: steps(1) 0.5s stand infinite;
+}
+
+.anime_punch {
+    animation: steps(1) 0.5s punch infinite;
+}
+
+.anim_win {
+    animation: steps(1) 0.5s win infinite;
+}
+
+@keyframes stand {
+    0%{
+        background-position-x:0;
+    }
+    25%{
+        background-position-x:-630px;
+    }
+    75%{
+        background-position-x:-1270px;
+    }
+}
+
+@keyframes punch {
+    0%{
+        background-position-x:-1870px;
+    }
+    25%{
+        background-position-x:-2480px;
+    }
+    75%{
+        background-position-x:-3105px;
+    }
+}
+
+@keyframes win {
+    0%{
+        background-position-x:-3888px;
+    }
+    25%{
+        background-position-x:-4575px;
+    }
+    75%{
+        background-position-x:-5403px;
+    }
+}
